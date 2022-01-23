@@ -69,10 +69,19 @@
                         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
                         veniam, quis nostrud exercitation.
                     </p>
-                    <button
+                    <button style="text" onclick="sendMail()"
                         class="uppercase font-medium text-sm text-white flex-none bg-[#37806B] py-1 px-4 rounded-tl-xl rounded-br-xl">
-                        Contact
+                        CLICK ME
                     </button>
+
+                    <script>
+                        function sendMail()
+                            {
+                               var mailBody = `<p style="color: red;"> Test</p>`;
+                               window.location="mailto:yourmail@domain.com?subject=hii&body="+mailBody;
+                            }
+                                                    
+                    </script>
                 </div>
                 <div
                     class="lg:mr-6 md:mr-10 mr-0  flex-1 flex flex-wrap lg:justify-end md:justify-center justify-center relative">
